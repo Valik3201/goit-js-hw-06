@@ -8,7 +8,7 @@ function handleSubmit(event) {
   const email = form.elements.email;
   const password = form.elements.password;
 
-  if (email === "" || password === "") {
+  if (email.value === "" || password.value === "") {
     return alert("Please fill in all the fields!");
   }
 
