@@ -13,9 +13,11 @@ const heading = document.createElement("h2");
 heading.textContent = "Ingredients:";
 ulItems.before(heading);
 
-ingredients.forEach((ingridient) => {
+const items = ingredients.map((ingredient) => {
   const item = document.createElement("li");
-  item.textContent = ingridient;
+  item.textContent = ingredient;
   item.className = "item";
-  ulItems.append(item);
+  return item;
 });
+
+ulItems.append(...items);
