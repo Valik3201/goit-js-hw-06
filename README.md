@@ -4,7 +4,7 @@ This repository is dedicated to exploring the Document Object Model (DOM) and ha
 
 ## Task 1
 
-In this task, we work with an HTML structure that includes a list of categories (`ul#categories`). A script is provided to count and display the number of categories, as well as to list the header text and the number of elements for each category.
+In this task, an HTML structure containing a list of categories `ul#categories` is processed. A script has been provided to count the categories and display the results, including the header text and the number of elements for each category. The result can be found in the console.
 
 ## Task 2
 
