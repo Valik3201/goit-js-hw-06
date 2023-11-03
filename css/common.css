@@ -39,6 +39,13 @@ button {
   cursor: pointer;
 }
 
+.description {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
 /* 2. Home Page
 ---------------------------------------- */
 
@@ -267,7 +274,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 50vh;
 }
 
 .widget p {
@@ -295,6 +302,13 @@ button {
 .change-color:hover,
 .change-color:focus {
   background-color: rgba(265, 265, 265, 0.2);
+}
+
+code {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
 }
 
 /* 10. Task 10
