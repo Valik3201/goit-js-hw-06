@@ -44,6 +44,7 @@ button {
 
 .title {
   text-align: center;
+  color: #10162f;
 }
 
 .tasks {
@@ -55,16 +56,18 @@ button {
   gap: 1rem;
 }
 
-.tasks li {
-  padding: 0.5rem 2rem;
-  background-color: #ffd300;
-  border-radius: 0.5rem;
-}
-
 .tasks li a {
-  color: #000;
+  color: #10162f;
   text-decoration: none;
   font-weight: 700;
+  padding: 0.625rem 2rem;
+  background-color: #ffd300;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in;
+}
+
+.tasks li a:hover {
+  background-color: #ffe20d;
 }
 
 /* 3. Back Button
@@ -75,11 +78,16 @@ button {
   align-items: center;
   padding: 0.5rem 2rem 0.5rem 1.5rem;
   background-color: #ffd300;
-  color: #000;
+  color: #10162f;
   text-decoration: none;
   font-weight: 700;
   border-radius: 0.5rem;
   width: fit-content;
+  transition: background-color 0.2s ease-in;
+}
+
+.back-button:hover {
+  background-color: #ffe20d;
 }
 
 /* 4. Task 4
@@ -104,7 +112,7 @@ button {
   font-weight: 700;
   margin: 0 6.25rem;
   padding: 0.625rem 1rem;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s ease-in;
 }
 
 #counter button[data-action="decrement"] {
@@ -222,6 +230,7 @@ button {
   padding: 0;
   margin-top: 1rem;
   display: block;
+  font-weight: 700;
 }
 
 .login-form input {
@@ -234,13 +243,16 @@ button {
 
 .login-form button {
   font-weight: 700;
+  font-size: 1rem;
   background-color: #3a10e5;
   color: #fff;
   border: none;
   border-radius: 0.5rem;
-  padding: 0.7rem 2rem;
+  padding: 1rem 2rem;
   margin-top: 2rem;
   cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease-in;
 }
 
 .login-form button:hover {
@@ -263,6 +275,7 @@ button {
   margin-bottom: 16px;
   font-size: 48px;
   font-weight: 600;
+  text-align: center;
 }
 
 .widget span {
@@ -286,3 +299,42 @@ button {
 
 /* 10. Task 10
 ---------------------------------------- */
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#controls input[type="number"] {
+  width: 5rem;
+  height: 2.5rem;
+  border: 0.125rem solid #10162f;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+#controls button {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: #ffd300;
+  color: #10162f;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+#controls button:hover {
+  background-color: #ffe20d;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
