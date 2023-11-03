@@ -1,3 +1,19 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Home Page
+  3. Back Button
+  4. Task 4
+  5. Task 5
+  6. Task 6 
+  7. Task 7
+  8. Task 8
+  9. Task 9
+  10. Task 10
+---------------------------------------- */
+
+/* 1. Global Styles
+---------------------------------------- */
+
 * {
   box-sizing: border-box;
 }
@@ -23,14 +39,250 @@ button {
   cursor: pointer;
 }
 
+/* 2. Home Page
+---------------------------------------- */
+
+.title {
+  text-align: center;
+}
+
+.tasks {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tasks li {
+  padding: 0.5rem 2rem;
+  background-color: #ffd300;
+  border-radius: 0.5rem;
+}
+
+.tasks li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* 3. Back Button
+---------------------------------------- */
+
+.back-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem 0.5rem 1.5rem;
+  background-color: #ffd300;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  width: fit-content;
+}
+
+/* 4. Task 4
+---------------------------------------- */
+
+#counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.125rem solid #000;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  width: 12rem;
+  margin: 0 auto;
+}
+
+#counter button {
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: large;
+  font-weight: 700;
+  margin: 0 6.25rem;
+  padding: 0.625rem 1rem;
+  transition: background-color 0.2s;
+}
+
+#counter button[data-action="decrement"] {
+  background-color: #dc2626;
+}
+
+#counter button[data-action="decrement"]:hover {
+  background-color: #b91c1c;
+}
+
+#counter button[data-action="increment"] {
+  background-color: #22c55e;
+}
+
+#counter button[data-action="increment"]:hover {
+  background-color: #16a34a;
+}
+
+#value {
+  font-size: large;
+  font-weight: 700;
+  margin: 0 1.25rem;
+}
+
+/* 5. Task 5
+---------------------------------------- */
+
+#name-input {
+  width: 50%;
+  padding: 1rem;
+  border: 0.188rem solid #4338ca;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  margin: 1.25rem 0;
+}
+
+#name-output {
+  color: #4338ca;
+  font-weight: 700;
+}
+
+/* 6. Task 6
+---------------------------------------- */
+
 #validation-input {
-  border: 3px solid #bdbdbd;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1.25rem 0;
+}
+
+#validation-input {
+  border: 0.188rem solid #94a3b8;
 }
 
 #validation-input.valid {
-  border-color: #4caf50;
+  border-color: #16a34a;
 }
 
 #validation-input.invalid {
-  border-color: #f44336;
+  border-color: #dc2626;
 }
+
+/* 7. Task 7
+---------------------------------------- */
+
+#font-size-control {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+
+#font-size-control::-webkit-slider-runnable-track {
+  background: #cbd5e1;
+  height: 0.5rem;
+  border-radius: 50px;
+}
+
+#font-size-control::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -8px; /* Centers thumb on the track */
+  background-color: #4338ca;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+#text {
+  font-weight: 500;
+  text-align: center;
+  display: block;
+}
+
+/* 8. Task 8
+---------------------------------------- */
+
+.login-form {
+  max-width: 30%;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.login-form label {
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  display: block;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.1rem solid #dcdcdc;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.login-form button {
+  font-weight: 700;
+  background-color: #3a10e5;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #5533ff;
+}
+
+/* 9. Task 9
+---------------------------------------- */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.widget p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.widget span {
+  font-family: monospace;
+}
+
+.change-color {
+  padding: 1rem 2rem;
+  background-color: rgba(265, 265, 265, 0.1);
+  color: #000;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: 0.125rem solid #000;
+  font-size: 1rem;
+}
+
+.change-color:hover,
+.change-color:focus {
+  background-color: rgba(265, 265, 265, 0.2);
+}
+
+/* 10. Task 10
+---------------------------------------- */
